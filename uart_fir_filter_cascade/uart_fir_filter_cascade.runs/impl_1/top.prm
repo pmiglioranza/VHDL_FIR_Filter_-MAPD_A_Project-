@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Feb  3 15:15:48 2022    /home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.runs/impl_1/top.bit

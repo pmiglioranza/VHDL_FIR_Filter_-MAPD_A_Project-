@@ -1,0 +1,444 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5017 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1362.785 ; gain = 0.000 ; free physical = 10527 ; free virtual = 15298
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:17]
+INFO: [Synth 8-3491] module 'uart_receiver' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_receiver.vhd:4' bound to instance 'uart_receiver_1' of component 'uart_receiver' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'uart_receiver' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_receiver.vhd:13]
+INFO: [Synth 8-3491] module 'sample_generator' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/sampler_generator.vhd:5' bound to instance 'sampler_generator_1' of component 'sample_generator' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_receiver.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'sample_generator' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/sampler_generator.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sample_generator' (1#1) [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/sampler_generator.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'uart_receiver' (2#1) [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_receiver.vhd:13]
+INFO: [Synth 8-3491] module 'fir_filter' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:6' bound to instance 'fir_filter_0' of component 'fir_filter' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'fir_filter' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:17]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:33]
+WARNING: [Synth 8-614] signal 'valid_in' is read in the process but is not in the sensitivity list [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:33]
+WARNING: [Synth 8-614] signal 'data_in' is read in the process but is not in the sensitivity list [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter' (3#1) [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:17]
+INFO: [Synth 8-3491] module 'fir_filter' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:6' bound to instance 'fir_filter_1' of component 'fir_filter' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:85]
+INFO: [Synth 8-3491] module 'fir_filter' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:6' bound to instance 'fir_filter_2' of component 'fir_filter' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:95]
+INFO: [Synth 8-3491] module 'fir_filter' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd:6' bound to instance 'fir_filter_3' of component 'fir_filter' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:105]
+INFO: [Synth 8-3491] module 'uart_transmitter' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_transmitter.vhd:4' bound to instance 'uart_transmitter_1' of component 'uart_transmitter' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'uart_transmitter' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_transmitter.vhd:14]
+INFO: [Synth 8-3491] module 'baudrate_generator' declared at '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/baudrate_generator.vhd:5' bound to instance 'baudrate_generator_1' of component 'baudrate_generator' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_transmitter.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'baudrate_generator' [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/baudrate_generator.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'baudrate_generator' (4#1) [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/baudrate_generator.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'uart_transmitter' (5#1) [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_transmitter.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1378.211 ; gain = 15.426 ; free physical = 10536 ; free virtual = 15310
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1378.211 ; gain = 15.426 ; free physical = 10536 ; free virtual = 15310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1378.211 ; gain = 15.426 ; free physical = 10536 ; free virtual = 15310
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/constrs_1/new/mapping.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command '--selector' is not supported in the xdc constraint file. [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/constrs_1/new/mapping.xdc:1]
+CRITICAL WARNING: [Designutils 20-1307] Command '--led' is not supported in the xdc constraint file. [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/constrs_1/new/mapping.xdc:7]
+CRITICAL WARNING: [Designutils 20-1307] Command '--clock' is not supported in the xdc constraint file. [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/constrs_1/new/mapping.xdc:12]
+Finished Parsing XDC File [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/constrs_1/new/mapping.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/constrs_1/new/mapping.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.102 ; gain = 0.000 ; free physical = 10232 ; free virtual = 15042
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.102 ; gain = 0.000 ; free physical = 10233 ; free virtual = 15043
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.102 ; gain = 0.000 ; free physical = 10233 ; free virtual = 15043
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1749.102 ; gain = 0.000 ; free physical = 10233 ; free virtual = 15043
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10312 ; free virtual = 15123
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10312 ; free virtual = 15123
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10314 ; free virtual = 15125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "pulse_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enable_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_receiver'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fir_filter'
+INFO: [Synth 8-5544] ROM "valid_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_sum" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_norm" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "baudrate_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                   start |                             0001 |                             0001
+                    bit0 |                             0010 |                             0010
+                    bit1 |                             0011 |                             0011
+                    bit2 |                             0100 |                             0100
+                    bit3 |                             0101 |                             0101
+                    bit4 |                             0110 |                             0110
+                    bit5 |                             0111 |                             0111
+                    bit6 |                             1000 |                             1000
+                    bit7 |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                     sum |                             0010 |                               01
+                    norm |                             0100 |                               10
+                  output |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fir_filter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                     000000000001 |                             0000
+              data_valid |                     000000000010 |                             0001
+                   start |                     000000000100 |                             0010
+                    bit0 |                     000000001000 |                             0011
+                    bit1 |                     000000010000 |                             0100
+                    bit2 |                     000000100000 |                             0101
+                    bit3 |                     000001000000 |                             0110
+                    bit4 |                     000010000000 |                             0111
+                    bit5 |                     000100000000 |                             1000
+                    bit6 |                     001000000000 |                             1001
+                    bit7 |                     010000000000 |                             1010
+                    stop |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_transmitter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10304 ; free virtual = 15115
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 12    
+	   4 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 12    
+	                8 Bit    Registers := 22    
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 9     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 16    
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	  10 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 8     
+	  12 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sample_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module uart_receiver 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+Module fir_filter 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module baudrate_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  12 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "uart_receiver_1/sampler_generator_1/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_receiver_1/sampler_generator_1/pulse_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_receiver_1/sampler_generator_1/enable_delay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_transmitter_1/baudrate_generator_1/baudrate_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10289 ; free virtual = 15104
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10152 ; free virtual = 14974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10154 ; free virtual = 14977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | fir_filter_0/data_sequence_reg[3][7] | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | fir_filter_1/data_sequence_reg[3][7] | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | fir_filter_2/data_sequence_reg[3][7] | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|top         | fir_filter_3/data_sequence_reg[3][7] | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |    14|
+|4     |LUT2   |    60|
+|5     |LUT3   |    99|
+|6     |LUT4   |    83|
+|7     |LUT5   |    56|
+|8     |LUT6   |    80|
+|9     |SRL16E |    32|
+|10    |FDCE   |   152|
+|11    |FDPE   |    36|
+|12    |FDRE   |   129|
+|13    |LDC    |    36|
+|14    |IBUF   |     6|
+|15    |OBUF   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+-------------------+------+
+|      |Instance                 |Module             |Cells |
++------+-------------------------+-------------------+------+
+|1     |top                      |                   |   798|
+|2     |  fir_filter_0           |fir_filter         |   162|
+|3     |  fir_filter_1           |fir_filter_0       |   155|
+|4     |  fir_filter_2           |fir_filter_1       |   155|
+|5     |  fir_filter_3           |fir_filter_2       |   129|
+|6     |  uart_receiver_1        |uart_receiver      |   143|
+|7     |    sampler_generator_1  |sample_generator   |    89|
+|8     |  uart_transmitter_1     |uart_transmitter   |    45|
+|9     |    baudrate_generator_1 |baudrate_generator |    29|
++------+-------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10151 ; free virtual = 14974
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1749.102 ; gain = 15.426 ; free physical = 10205 ; free virtual = 15027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1749.102 ; gain = 386.316 ; free physical = 10205 ; free virtual = 15027
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.102 ; gain = 0.000 ; free physical = 10148 ; free virtual = 14971
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  LDC => LDCE: 36 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1749.102 ; gain = 386.391 ; free physical = 10203 ; free virtual = 15026
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.102 ; gain = 0.000 ; free physical = 10203 ; free virtual = 15026
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  3 15:14:30 2022...

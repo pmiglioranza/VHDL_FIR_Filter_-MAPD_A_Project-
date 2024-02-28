@@ -1,0 +1,203 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Feb  3 15:15:00 2022
+| Host         : eugenio-HP-Pavilion-Laptop-15-eg0xxx running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   133 |
+| Unused register locations in slices containing registers |   831 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |          109 |
+|      4 |            5 |
+|      8 |            5 |
+|      9 |            1 |
+|     10 |            3 |
+|     12 |            1 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            7 |
+| No           | No                    | Yes                    |              40 |           40 |
+| No           | Yes                   | No                     |              65 |           46 |
+| Yes          | No                    | No                     |              73 |           20 |
+| Yes          | No                    | Yes                    |             148 |           60 |
+| Yes          | Yes                   | No                     |              10 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|               Clock Signal              |                             Enable Signal                            |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count |
++-----------------------------------------+----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_6                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[6]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[7]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[5]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[4]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[3]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[2]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[1]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/FSM_onehot_state_reg_n_0_[3]                            | uart_receiver_1/received_data_reg[0]_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/valid_out_reg_C_1                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/valid_out_reg_LDC_i_1_n_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/valid_out_reg_C_1                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_8                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_7                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[1]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_5                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_4                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_3                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_2                                          |                1 |              1 |
+|  fir_filter_2/data_out_reg[1]_C_1       |                                                                      | fir_filter_2/data_out_reg[1]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_0                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_3/valid_out_reg_LDC_i_1_n_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[4]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[3]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[2]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[1]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[0]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/valid_out_reg_LDC_i_1_n_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[6]_C_1                                     |                1 |              1 |
+|  fir_filter_2/valid_out_reg_LDC_i_1_n_0 |                                                                      | fir_filter_1/valid_out_reg_C_1                                       |                1 |              1 |
+|  fir_filter_1/data_out_reg[4]_C_1       |                                                                      | fir_filter_1/data_out_reg[4]_C_0                                     |                1 |              1 |
+|  fir_filter_1/data_out_reg[6]_C_1       |                                                                      | fir_filter_1/data_out_reg[6]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[4]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[6]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[5]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[3]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[2]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[1]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[0]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_1/data_out_reg[7]_C_3                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | uart_transmitter_1/busy_i_1_n_0                                      |                                                                      |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[7]_C_2                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/valid_reg_1                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[5]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[4]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[3]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[2]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[1]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_0/data_out_reg[0]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[0]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[7]_C_3                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[6]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[5]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[4]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[3]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/FSM_onehot_state_reg_n_0_[3]                            | fir_filter_2/data_out_reg[2]_C_1                                     |                1 |              1 |
+|  fir_filter_2/data_out_reg[6]_C_1       |                                                                      | fir_filter_2/data_out_reg[6]_C_0                                     |                1 |              1 |
+|  uart_receiver_1/received_data_reg[4]_0 |                                                                      | uart_receiver_1/valid_reg_4                                          |                1 |              1 |
+|  uart_receiver_1/received_data_reg[3]_0 |                                                                      | uart_receiver_1/valid_reg_3                                          |                1 |              1 |
+|  uart_receiver_1/received_data_reg[2]_0 |                                                                      | uart_receiver_1/valid_reg_2                                          |                1 |              1 |
+|  uart_receiver_1/received_data_reg[1]_0 |                                                                      | uart_receiver_1/valid_reg_1                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[7]_C_2                                     |                1 |              1 |
+|  fir_filter_3/valid_out_reg_LDC_i_1_n_0 |                                                                      | fir_filter_2/valid_out_reg_C_1                                       |                1 |              1 |
+|  fir_filter_1/data_out_reg[5]_C_1       |                                                                      | fir_filter_1/data_out_reg[5]_C_0                                     |                1 |              1 |
+|  fir_filter_1/data_out_reg[3]_C_1       |                                                                      | fir_filter_1/data_out_reg[3]_C_0                                     |                1 |              1 |
+|  fir_filter_1/data_out_reg[2]_C_1       |                                                                      | fir_filter_1/data_out_reg[2]_C_0                                     |                1 |              1 |
+|  fir_filter_1/data_out_reg[1]_C_1       |                                                                      | fir_filter_1/data_out_reg[1]_C_0                                     |                1 |              1 |
+|  fir_filter_1/data_out_reg[0]_C_1       |                                                                      | fir_filter_1/data_out_reg[0]_C_0                                     |                1 |              1 |
+|  fir_filter_0/valid_out_reg_LDC_i_1_n_0 |                                                                      | uart_receiver_1/valid_reg_8                                          |                1 |              1 |
+|  fir_filter_2/data_out_reg[0]_C_1       |                                                                      | fir_filter_2/data_out_reg[0]_C_0                                     |                1 |              1 |
+|  fir_filter_2/data_out_reg[7]_C_3       |                                                                      | fir_filter_2/data_out_reg[7]_C_2                                     |                1 |              1 |
+|  uart_receiver_1/received_data_reg[0]_0 |                                                                      | uart_receiver_1/valid_reg_0                                          |                1 |              1 |
+|  fir_filter_2/data_out_reg[5]_C_1       |                                                                      | fir_filter_2/data_out_reg[5]_C_0                                     |                1 |              1 |
+|  fir_filter_2/data_out_reg[4]_C_1       |                                                                      | fir_filter_2/data_out_reg[4]_C_0                                     |                1 |              1 |
+|  fir_filter_2/data_out_reg[3]_C_1       |                                                                      | fir_filter_2/data_out_reg[3]_C_0                                     |                1 |              1 |
+|  fir_filter_2/data_out_reg[2]_C_1       |                                                                      | fir_filter_2/data_out_reg[2]_C_0                                     |                1 |              1 |
+|  fir_filter_1/data_out_reg[7]_C_3       |                                                                      | fir_filter_1/data_out_reg[7]_C_2                                     |                1 |              1 |
+|  fir_filter_1/valid_out_reg_LDC_i_1_n_0 |                                                                      | fir_filter_0/valid_out_reg_C_1                                       |                1 |              1 |
+|  fir_filter_0/data_out_reg[7]_C_2       |                                                                      | fir_filter_0/data_out_reg[7]_C_1                                     |                1 |              1 |
+|  fir_filter_0/data_out_reg[6]_C_1       |                                                                      | fir_filter_0/data_out_reg[6]_C_0                                     |                1 |              1 |
+|  fir_filter_0/data_out_reg[5]_C_1       |                                                                      | fir_filter_0/data_out_reg[5]_C_0                                     |                1 |              1 |
+|  fir_filter_0/data_out_reg[4]_C_1       |                                                                      | fir_filter_0/data_out_reg[4]_C_0                                     |                1 |              1 |
+|  fir_filter_0/data_out_reg[3]_C_1       |                                                                      | fir_filter_0/data_out_reg[3]_C_0                                     |                1 |              1 |
+|  fir_filter_0/data_out_reg[2]_C_1       |                                                                      | fir_filter_0/data_out_reg[2]_C_0                                     |                1 |              1 |
+|  fir_filter_0/data_out_reg[1]_C_1       |                                                                      | fir_filter_0/data_out_reg[1]_C_0                                     |                1 |              1 |
+|  fir_filter_0/data_out_reg[0]_C_1       |                                                                      | fir_filter_0/data_out_reg[0]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[7]_C_1                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[1]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[0]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[1]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[2]_C_0                                     |                1 |              1 |
+|  uart_receiver_1/received_data_reg[5]_0 |                                                                      | uart_receiver_1/valid_reg_5                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[4]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[5]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[6]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_0/data_out_reg[3]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/valid_out_reg_C_1                                       |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/valid_out_reg_LDC_i_1_n_0                               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[7]_C_2                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[3]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[4]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[5]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[6]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[2]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[6]_C_0                                     |                1 |              1 |
+|  uart_receiver_1/received_data_reg[7]_0 |                                                                      | uart_receiver_1/valid_reg_7                                          |                1 |              1 |
+|  uart_receiver_1/received_data_reg[6]_0 |                                                                      | uart_receiver_1/valid_reg_6                                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_2/data_out_reg[0]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | fir_filter_1/data_out_reg[5]_C_0                                     |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/state0                                                  |                                                                      |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/state0                                                  |                                                                      |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/state0                                                  |                                                                      |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                    | uart_receiver_1/sampler_generator_1/FSM_sequential_state_reg[0][0]   |                                                                      |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/state0                                                  |                                                                      |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG                    | uart_receiver_1/sampler_generator_1/E[0]                             |                                                                      |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/data_norm                                               | fir_filter_0/data_sum[9]_i_1_n_0                                     |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/data_norm                                               | fir_filter_1/data_sum[9]_i_1__0_n_0                                  |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/data_norm                                               | fir_filter_3/data_sum[9]_i_1__2_n_0                                  |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/data_norm                                               | fir_filter_2/data_sum[9]_i_1__1_n_0                                  |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_transmitter_1/baudrate_generator_1/counter[9]_i_1__0_n_0        |                3 |              9 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/sampler_generator_1/p_0_in                           |                4 |             10 |
+|  CLK100MHZ_IBUF_BUFG                    | uart_receiver_1/sampler_generator_1/state_machine_counter[9]_i_2_n_0 | uart_receiver_1/sampler_generator_1/state_machine_counter[9]_i_1_n_0 |                3 |             10 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      | uart_receiver_1/sampler_generator_1/clear                            |                3 |             10 |
+|  CLK100MHZ_IBUF_BUFG                    | uart_transmitter_1/baudrate_generator_1/E[0]                         |                                                                      |                2 |             12 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/data_sum                                                |                                                                      |                3 |             16 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/data_sum_0                                              |                                                                      |                3 |             16 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/data_sum                                                |                                                                      |                2 |             16 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/data_sum                                                |                                                                      |                2 |             16 |
+|  CLK100MHZ_IBUF_BUFG                    |                                                                      |                                                                      |                7 |             17 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_0/data_sum_0                                              | fir_filter_0/data_sum[9]_i_1_n_0                                     |                4 |             21 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_3/data_sum                                                | fir_filter_3/data_sum[9]_i_1__2_n_0                                  |                5 |             21 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_2/data_sum                                                | fir_filter_2/data_sum[9]_i_1__1_n_0                                  |                5 |             21 |
+|  CLK100MHZ_IBUF_BUFG                    | fir_filter_1/data_sum                                                | fir_filter_1/data_sum[9]_i_1__0_n_0                                  |                5 |             21 |
++-----------------------------------------+----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+
+

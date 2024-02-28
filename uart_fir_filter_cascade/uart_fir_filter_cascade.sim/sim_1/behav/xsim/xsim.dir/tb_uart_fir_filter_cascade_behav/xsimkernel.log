@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_uart_fir_filter_cascade_behav/xsimk -simmode gui -wdb tb_uart_fir_filter_cascade_behav.wdb -simrunnum 0 -socket 56563
+Design successfully loaded
+Design Loading Memory Usage: 33144 KB (Peak: 33264 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 123080 KB (Peak: 180416 KB)
+Simulation CPU Usage: 630 ms

@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fir_filter'

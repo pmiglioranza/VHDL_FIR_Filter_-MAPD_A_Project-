@@ -1,0 +1,21 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto f1ecddbb7ecd4d1d8a563e8e64f75c5d --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_uart_fir_filter_cascade_behav xil_defaultlib.tb_uart_fir_filter_cascade -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.sample_generator [sample_generator_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_receiver [uart_receiver_default]
+Compiling architecture behavioural of entity xil_defaultlib.fir_filter [fir_filter_default]
+Compiling architecture rtl of entity xil_defaultlib.baudrate_generator [baudrate_generator_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_transmitter [uart_transmitter_default]
+Compiling architecture rtl of entity xil_defaultlib.top [top_default]
+Compiling architecture test of entity xil_defaultlib.tb_uart_fir_filter_cascade
+Built simulation snapshot tb_uart_fir_filter_cascade_behav

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 23 23:05:58 2022
+# Process ID: 43161
+# Current directory: /home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.sim/sim_1/behav/xsim/xsim.dir/tb_uart_fir_filter_cascade_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.sim/sim_1/behav/xsim/xsim.dir/tb_uart_fir_filter_cascade_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 23 23:05:58 2022...

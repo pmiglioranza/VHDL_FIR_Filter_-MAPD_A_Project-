@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sim_1/new/tb_uart_fir_filter_cascade.vhd,1642167745,vhdl,,,,tb_uart_fir_filter_cascade,,,,,,,,
+/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/baudrate_generator.vhd,1642167745,vhdl,,,,baudrate_generator,,,,,,,,
+/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd,1642976050,vhdl,,,,fir_filter,,,,,,,,
+/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/sampler_generator.vhd,1642167745,vhdl,,,,sample_generator,,,,,,,,
+/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/top.vhd,1642167745,vhdl,,,,top,,,,,,,,
+/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_receiver.vhd,1642167745,vhdl,,,,uart_receiver,,,,,,,,
+/home/eugenio/Scrivania/LabMAPD_A/uart_fir_filter_cascade/uart_fir_filter_cascade.srcs/sources_1/new/uart_transmitter.vhd,1642167745,vhdl,,,,uart_transmitter,,,,,,,,

@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../uart_fir_filter_cascade.srcs/sources_1/new/baudrate_generator.vhd" \
+"../../../../uart_fir_filter_cascade.srcs/sources_1/new/fir_filter.vhd" \
+"../../../../uart_fir_filter_cascade.srcs/sources_1/new/sampler_generator.vhd" \
+"../../../../uart_fir_filter_cascade.srcs/sources_1/new/top.vhd" \
+"../../../../uart_fir_filter_cascade.srcs/sources_1/new/uart_receiver.vhd" \
+"../../../../uart_fir_filter_cascade.srcs/sources_1/new/uart_transmitter.vhd" \
+"../../../../uart_fir_filter_cascade.srcs/sim_1/new/tb_uart_fir_filter_cascade.vhd" \
+
+# Do not sort compile order
+nosort
